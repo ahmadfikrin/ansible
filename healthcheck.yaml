@@ -1,6 +1,7 @@
-- hosts:
-    - all
+---
+- name: Healthcheck
+  hosts: all
   tasks:
     - action: ping
     - name: Disk usage from command module
-            command: df -h
+      command: df -h
